@@ -1,494 +1,544 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <!--Header-->
-    <header class="header">
-        <div class="sidenav" id="side">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>JavaScript</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <!--Header-->
+      <header class="header" id="home">
+         <div class="sidenav" id="side">
             <div class="logo">
-                <a href="#"><span class="SenLetter">Js</span>/Js</a>
+               <a href="index.html"><span class="SenLetter">Js</span>/Js</a>
             </div>
             <div class="navigation">
-                <ul>
-                    <li>
-                        <a href="#about">
-                            <i class="fas fa-genderless" id="arrowHome"></i>
-                            Home
-                        </a>
-                    </li>
-                    <li> <a href="#gallery">
-                            <i class="fas fa-genderless" id="arrowGallery"></i>
-                            Gallery</a>
-                    </li>
-                    <li><a href="#works">
-                            <i class="fas fa-genderless" id="arrowWork"></i>
-                            Works</a>
-                    </li>
-                    <li><a href="#contact">
-                            <i class="fas fa-genderless" id="arrowContact"></i>
-                            Contact</a>
-                    </li>
-                </ul>
+               <ul>
+                  <li>
+                     <a href="#home">
+                     <i class="fab fa-canadian-maple-leaf" id="iconHome"></i>
+                     Home
+                     </a>
+                  </li>
+                  <li> <a href="#cssgrid" id="lgrid">
+                     <i class="fab fa-canadian-maple-leaf" id="iconGrid"></i>
+                     Grid Layout</a>
+                  </li>
+                  <li><a href="#video">
+                     <i class="fab fa-canadian-maple-leaf" id="iconVideo"></i>
+                     Video</a>
+                  </li>
+                  <li>
+                     <a href="#stepByStep">
+                     <i class="fab fa-canadian-maple-leaf" id="iconStep"></i>
+                     Step by Step
+                     </a>
+                  </li>
+                  <li><a href="#contact">
+                     <i class="fab fa-canadian-maple-leaf" id="iconContact"></i>
+                     Contact</a>
+                  </li>
+               </ul>
             </div>
-        </div>
-        <!--Responsive Navigation-->
-        <nav id="hideNavScroll">
+         </div>
+         <!--Responsive Navigation-->
+         <nav id="hideNavScroll">
             <button onclick="responsiveBtn()" class="btn_responsive" id="btn_responsiveJS">
-                <i class="fas fa-bars fa-2x"></i>
+            <i class="fas fa-bars fa-2x"></i>
             </button>
             <div class="nav_responsive" id="nav_responsive">
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Clients</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
+               <ul>
+                  <li>
+                     <a href="#home">Home</a>
+                  </li>
+                  <li>
+                     <a href="#cssgrid">Grid Layout</a>
+                  </li>
+                  <li>
+                     <a href="#video">Video</a>
+                  </li>
+                  <li>
+                     <a href="#stepByStep">Step by Step</a>
+                  </li>
+                  <li>
+                     <a href="#contact">Contact</a>
+                  </li>
+               </ul>
             </div>
-        </nav>
-        <!--Slide Carousel-->
-        <div class="main section1" id="home">
+         </nav>
+         <!--Slide Carousel-->
+         <div class="main section1" id="home">
             <div class="slideContainer">
-                <div class="textHeader">
-                    <h1><span id="letter">JavaScript template</span></h1>
-                    <p id="outputWritter"></p>
-                    <a href="#" class="btnExplorer">Explorer</a>
-                </div>
-                <div class="slide fade" id="slide">
-                    <img src="https://templatemo.com/templates/templatemo_518_sentra/img/slide_2.jpg" alt="">
-                </div>
-                <div class="slide fade" id="slide">
-                    <img src="https://cdn.pixabay.com/photo/2020/11/08/16/57/forest-5724397_1280.jpg" alt="">
-                </div>
-                <div class="slide fade" id="slide">
-                    <img src="https://cdn.pixabay.com/photo/2020/11/22/08/06/forest-5765878_1280.jpg" alt="">
-                </div>
+               <div class="textHeader">
+                  <h1><span id="letter">JavaScript template</span></h1>
+                  <p id="outputWritter"></p>
+                  <a href="#stepByStep" class="btnExplorer">Explorer</a>
+               </div>
+               <div class="slide fade" id="slide">
+                  <img src="https://cdn.pixabay.com/photo/2017/05/21/15/14/balloon-2331488_1280.jpg" alt="">
+               </div>
+               <div class="slide fade" id="slide">
+                  <img src="https://cdn.pixabay.com/photo/2020/08/28/21/26/faro-5525698_1280.jpg" alt="">
+               </div>
+               <div class="slide fade" id="slide">
+                  <img src="https://cdn.pixabay.com/photo/2012/03/03/23/54/animal-21668_1280.jpg" alt="">
+               </div>
             </div>
-        </div>
-    </header>
-    <!--Content-->
-    <section class="content">
-        <div class="title_pojects">
-            <h2>Featured
-                <br>
-                <span class="projectsBlue">Places</span>
+         </div>
+      </header>
+      <!--Content-->
+      <section class="content" id="cssgrid">
+         <div class="title_pojects">
+            <h2>CSS
+               <br>
+               <span class="projectsBlue">Grid</span>
             </h2>
-            <p>Praesent pellentesque efficitur magna, <br>
-                sed pellentesque neque malesuada vitae.</p>
-        </div>
-        <div class="content_text">
+            <p>in this gallery, I used <strong>grid-template-columns</strong>, <br> to make it
+               responsive and self-sized.
+            </p>
+         </div>
+         <div class="content_text">
             <div class="card">
-                <img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/the-road-815297_1280.jpg" alt="">
-                <div class="overlay">
-                    <a href="#" class="text_overlay"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></a>
-                </div>
+               <img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/the-road-815297_1280.jpg" alt="">
+               <div class="overlay">
+                  <a href="#" class="text_overlay"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></a>
+               </div>
             </div>
             <div class="card">
-                <img src="https://cdn.pixabay.com/photo/2013/07/25/01/31/forest-166733_1280.jpg" alt="">
-                <div class="overlay">
-                    <a href="#" class="text_overlay"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></a>
-                </div>
+               <img src="https://cdn.pixabay.com/photo/2013/07/25/01/31/forest-166733_1280.jpg" alt="">
+               <div class="overlay">
+                  <a href="#" class="text_overlay"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></a>
+               </div>
             </div>
             <div class="card">
-                <img src="https://cdn.pixabay.com/photo/2015/07/31/06/50/forest-868715_1280.jpg" alt="">
-                <div class="overlay">
-                    <a href="#" class="text_overlay"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></a>
-                </div>
+               <img src="https://cdn.pixabay.com/photo/2015/07/31/06/50/forest-868715_1280.jpg" alt="">
+               <div class="overlay">
+                  <a href="#" class="text_overlay"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></a>
+               </div>
             </div>
             <div class="card">
-                <img src="https://cdn.pixabay.com/photo/2015/09/09/16/05/forest-931706_1280.jpg" alt="">
-                <div class="overlay">
-                    <a href="#" class="text_overlay"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></a>
-                </div>
+               <img src="https://cdn.pixabay.com/photo/2015/09/09/16/05/forest-931706_1280.jpg" alt="">
+               <div class="overlay">
+                  <a href="#" class="text_overlay"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></a>
+               </div>
             </div>
             <div class="card">
-                <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/fall-1072821_1280.jpg" alt="">
-                <div class="overlay">
-                    <a href="#" class="text_overlay"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></a>
-                </div>
+               <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/fall-1072821_1280.jpg" alt="">
+               <div class="overlay">
+                  <a href="#" class="text_overlay"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></a>
+               </div>
             </div>
             <div class="card">
-                <img src="https://cdn.pixabay.com/photo/2014/12/08/02/59/benches-560435_1280.jpg" alt="">
-                <div class="overlay">
-                    <a href="#" class="text_overlay"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></a>
-                </div>
+               <img src="https://cdn.pixabay.com/photo/2014/12/08/02/59/benches-560435_1280.jpg" alt="">
+               <div class="overlay">
+                  <a href="#" class="text_overlay"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></a>
+               </div>
             </div>
-        </div>
-    </section>
-    <div class="grid">
-        <div class="title_pojects">
-            <h2>Recent
-                <br>
-                <span class="projectsBlue">Projects</span>
+         </div>
+      </section>
+      <div class="grid">
+         <div class="title_pojects">
+            <h2>CSS
+               <br>
+               <span class="projectsBlue">Grid</span>
             </h2>
-            <p>Praesent pellentesque efficitur magna, <br>
-                sed pellentesque neque malesuada vitae.</p>
-        </div>
-
-        <div class="grid_container">
+            <p>in this gallery, I used <strong>grid-template-areas</strong>, <br> to position
+               the images in different places.
+            </p>
+         </div>
+         <div class="grid_container">
             <img src="https://templatemo.com/templates/templatemo_518_sentra/img/portfolio_1.jpg" alt="" class="img1">
             <img src="https://templatemo.com/templates/templatemo_518_sentra/img/portfolio_2.jpg" alt="" class="img2">
             <img src="https://templatemo.com/templates/templatemo_518_sentra/img/portfolio_3.jpg" alt="" class="img3">
             <img src="https://templatemo.com/templates/templatemo_518_sentra/img/portfolio_4.jpg" alt="" class="img4">
             <img src="https://templatemo.com/templates/templatemo_518_sentra/img/portfolio_5.jpg" alt="" class="img5">
-        </div>
-    </div>
-    <section class="video">
-        <div class="video_body">
+         </div>
+      </div>
+      <!--Video-->
+      <section class="video" id="video">
+         <div class="video_body">
             <div class="title_video">
-                <h2>This is a <span class="company">company</span> presentation.</h2>
-                <p class="subtitle">Praesent pellentesque efficitur magna, sed pellentesque neque malesuada vitae.</p>
-                <p class="subtitleText">In eget ipsum sed lorem vehicula luctus. Curabitur non dolor rhoncus, hendrerit
-                    justo sit amet, vestibulum turpis. Pellentesque id auctor tellus, vel ultricies augue. Duis
-                    condimentum aliquet blandit. Fusce rhoncus et eros ut pharetra. Phasellus convallis ultricies ligula
-                    ac gravida.</p>
-                <a href="#" class="btnExplorer btnContinue">continue</a>
+               <h2>This is a <span class="company">company</span> presentation.</h2>
+               <p class="subtitle">Praesent pellentesque efficitur magna, sed pellentesque neque malesuada vitae.</p>
+               <p class="subtitleText">In eget ipsum sed lorem vehicula luctus. Curabitur non dolor rhoncus, hendrerit
+                  justo sit amet, vestibulum turpis. Pellentesque id auctor tellus, vel ultricies augue. Duis
+                  condimentum aliquet blandit. Fusce rhoncus et eros ut pharetra. Phasellus convallis ultricies ligula
+                  ac gravida.
+               </p>
+               <a href="#" class="btnExplorer btnContinue">continue</a>
             </div>
             <div class="box_video">
-                <div class="background_video">
-                    <img src="https://unsplash.imgix.net/photo-1425036458755-dc303a604201?fit=crop&fm=jpg&q=75&w=1000"
-                        alt="">
-
-                    <div class="play">
-                        <a href="javascript:void(0)" id="videoShow">
-                            <i class="fas fa-play-circle fa-4x"></i>
-                        </a>
-                    </div>
-                    <div id="videoframe">
-                        <iframe id="videoYoutube" width="100%" height="520"
-                            src="https://www.youtube.com/embed/6s_YGtVOzNs" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
+               <div class="background_video">
+                  <img src="https://unsplash.imgix.net/photo-1425036458755-dc303a604201?fit=crop&fm=jpg&q=75&w=1000"
+                     alt="">
+                  <div class="play">
+                     <a href="javascript:void(0)" id="videoShow">
+                     <i class="fas fa-play-circle fa-4x"></i>
+                     </a>
+                  </div>
+                  <div id="videoframe">
+                     <iframe id="videoYoutube" width="100%" height="520"
+                        src="https://www.youtube.com/embed/6s_YGtVOzNs" frameborder="0" allowfullscreen></iframe>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-    <!--Step by Step-->
-    <section class="step">
-        <div class="title_pojects">
+         </div>
+      </section>
+      <!--Step by Step-->
+      <section class="step" id="stepByStep">
+         <div class="title_pojects">
             <h2>Step by
-                <br>
-                <span class="projectsBlue">Step</span>
+               <br>
+               <span class="projectsBlue">Step</span>
             </h2>
             <p>In this section I will show you how <br>
-                I made this site, using <span class="jsBlue">Javascript</span>.</p>
-        </div>
-        <div class="modal_grid">
+               I made this site, using <span class="jsBlue">Javascript</span>.
+            </p>
+         </div>
+         <div class="modal_grid">
             <div class="grid_individual">
-                <div class="body_step">
-                    <div class="title_body_step">
-                        <h3>Change text effect</h3>
-                    </div>
-                    <div class="text_body_step">
-                        <p>You will be able to create an "automatic text change" effect.</p>
-                        <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode1">code</a>
-                    </div>
-
-                </div>
-                <div id="modal_1">
-                    <div class="code_text_1">
-                        <span class="close">&times;</span>
-                        <code>let words = ["Easy to recreate", "zoom effect with CSS", "Easy"];
-                let wordsIndividual = 0;
-                setInterval(() => {
-                    document.getElementById("letter").innerHTML = words[wordsIndividual++]
-                    if (wordsIndividual === words.length) wordsIndividual = 0;               
-                }, 20000);               
-            </code>
-                    </div>
-                </div>
+               <div class="body_step">
+                  <div class="title_body_step">
+                     <h3>Change text effect</h3>
+                  </div>
+                  <div class="text_body_step">
+                     <p>You will be able to create an "automatic text change" effect.</p>
+                     <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode1">code</a>
+                  </div>
+               </div>
+               <div id="modal_1">
+                  <div class="code_text_1">
+                     <span class="close">&times;</span>
+                     <code>let words = ["Easy to recreate", "zoom effect with CSS", "Easy"];
+                     let wordsIndividual = 0;
+                     setInterval(() => {
+                     document.getElementById("letter").innerHTML = words[wordsIndividual++]
+                     if (wordsIndividual === words.length) wordsIndividual = 0;               
+                     }, 20000);               
+                     </code>
+                  </div>
+               </div>
             </div>
             <div class="grid_individual">
-                <div class="body_step">
-                    <div class="title_body_step">
-                        <h3>typeWriter effect</h3>
-                    </div>
-                    <div class="text_body_step">
-                        <p>Easy and pleasant, this effect is to make your website more attractive.</p>
-                        <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode2">code</a>
-                    </div>
-                </div>
-                <div id="modal_2">
-                    <div class="code_text_2">
-                        <span class="close close_2">&times;</span>
-                        <code>let i = 0;
-                    let txt = "The evolution of a simple developer is given by the insistence";
-                    
-                    function typeWriter() {
-                        if (i < txt.length) {
-                            document.getElementById("outputWritter").innerHTML += txt.charAt(i);
-                            i++;
-                        }
-                        setTimeout(typeWriter, 100);
-                    }
-                    window.onload = typeWriter;               
-            </code>
-                    </div>
-                </div>
+               <div class="body_step">
+                  <div class="title_body_step">
+                     <h3>typeWriter effect</h3>
+                  </div>
+                  <div class="text_body_step">
+                     <p>Easy and pleasant, this effect is to make your website more attractive.</p>
+                     <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode2">code</a>
+                  </div>
+               </div>
+               <div id="modal_2">
+                  <div class="code_text_2">
+                     <span class="close close_2">&times;</span>
+                     <code>let i = 0;
+                     let txt = "The evolution of a simple developer is given by the insistence";
+                     function typeWriter() {
+                     if (i < txt.length) {
+                     document.getElementById("outputWritter").innerHTML += txt.charAt(i);
+                     i++;
+                     }
+                     setTimeout(typeWriter, 100);
+                     }
+                     window.onload = typeWriter;               
+                     </code>
+                  </div>
+               </div>
             </div>
             <div class="grid_individual">
-                <div class="body_step">
-                    <div class="title_body_step">
-                        <h3>Hide Navbar on Scroll Down
-                        </h3>
-                    </div>
-                    <div class="text_body_step">
-                        <p>thinking about mobile, you can use this to help you.</p>
-                        <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode3">code</a>
-                    </div>
-                </div>
-                <div id="modal_3">
-                    <div class="code_text_3">
-                        <span class="close close_3">&times;</span>
-                        <code>var prevScroll = window.pageYOffset;
-                    window.onscroll = function () {
-                        var currentScroll = window.pageYOffset;
-                        if (prevScroll > currentScroll) {
-                            document.getElementById("btn_responsiveJS").style.top = "0";
-                            document.getElementById("nav_responsive").style.top = "0";
-                        } else {
-                            document.getElementById("btn_responsiveJS").style.top = "-100px";
-                            document.getElementById("nav_responsive").style.top = "-100px";
-                        }
-                        prevScroll = currentScroll;
-                    }              
-            </code>
-                    </div>
-                </div>
+               <div class="body_step">
+                  <div class="title_body_step">
+                     <h3>Hide Navbar on Scroll Down
+                     </h3>
+                  </div>
+                  <div class="text_body_step">
+                     <p>thinking about mobile, you can use this to help you.</p>
+                     <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode3">code</a>
+                  </div>
+               </div>
+               <div id="modal_3">
+                  <div class="code_text_3">
+                     <span class="close close_3">&times;</span>
+                     <code>var prevScroll = window.pageYOffset;
+                     window.onscroll = function () {
+                     var currentScroll = window.pageYOffset;
+                     if (prevScroll > currentScroll) {
+                     document.getElementById("btn_responsiveJS").style.top = "0";
+                     document.getElementById("nav_responsive").style.top = "0";
+                     } else {
+                     document.getElementById("btn_responsiveJS").style.top = "-100px";
+                     document.getElementById("nav_responsive").style.top = "-100px";
+                     }
+                     prevScroll = currentScroll;
+                     }              
+                     </code>
+                  </div>
+               </div>
             </div>
             <div class="grid_individual">
-                <div class="body_step">
-                    <div class="title_body_step">
-                        <h3>Responsive Menu
-                        </h3>
-                    </div>
-                    <div class="text_body_step">
-                        <p>A pleasant, easy and very useful responsive menu.</p>
-                        <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode4">code</a>
-                    </div>
-                </div>
-                <div id="modal_4">
-                    <div class="code_text_4">
-                        <span class="close close_4">&times;</span>
-                        <code>function responsiveBtn() {
-                    let menu = document.getElementById("nav_responsive");
-                    if (menu.style.visibility === "visible") {
-                        menu.style.visibility = "hidden"
-                
-                    } else {
-                        menu.style.visibility = "visible";
-                    }
-                
-                }             
-            </code>
-                    </div>
-                </div>
+               <div class="body_step">
+                  <div class="title_body_step">
+                     <h3>Responsive Menu
+                     </h3>
+                  </div>
+                  <div class="text_body_step">
+                     <p>A pleasant, easy and very useful responsive menu.</p>
+                     <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode4">code</a>
+                  </div>
+               </div>
+               <div id="modal_4">
+                  <div class="code_text_4">
+                     <span class="close close_4">&times;</span>
+                     <code>function responsiveBtn() {
+                     let menu = document.getElementById("nav_responsive");
+                     if (menu.style.visibility === "visible") {
+                     menu.style.visibility = "hidden"
+                     } else {
+                     menu.style.visibility = "visible";
+                     }
+                     }             
+                     </code>
+                  </div>
+               </div>
             </div>
             <div class="grid_individual">
-                <div class="body_step">
-                    <div class="title_body_step">
-                        <h3>Carousel
-                        </h3>
-                    </div>
-                    <div class="text_body_step">
-                        <p>A carousel simple, easy and very atractive for you learn.</p>
-                        <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode5">code</a>
-                    </div>
-                </div>
-                <div id="modal_5">
-                    <div class="code_text_5">
-                        <span class="close close_5">&times;</span>
-                        <code>var slideIndex = 0;
-                    SlideShow();
-                    
-                    function SlideShow() {
-                        var i = 0;
-                        var slides = document.getElementsByClassName("slide");
-                    
-                        for (i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";
-                        }
-                        slideIndex++;
-                    
-                        if (slideIndex > slides.length) { slideIndex = 1 };
-                    
-                        slides[slideIndex - 1].style.display = "block";
-                    
-                        setTimeout(SlideShow, 20000);                   
-                    }              
-            </code>
-                    </div>
-                </div>
+               <div class="body_step">
+                  <div class="title_body_step">
+                     <h3>Carousel
+                     </h3>
+                  </div>
+                  <div class="text_body_step">
+                     <p>A carousel simple, easy and very atractive for you learn.</p>
+                     <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode5">code</a>
+                  </div>
+               </div>
+               <div id="modal_5">
+                  <div class="code_text_5">
+                     <span class="close close_5">&times;</span>
+                     <code>var slideIndex = 0;
+                     SlideShow();
+                     function SlideShow() {
+                     var i = 0;
+                     var slides = document.getElementsByClassName("slide");
+                     for (i = 0; i < slides.length; i++) {
+                     slides[i].style.display = "none";
+                     }
+                     slideIndex++;
+                     if (slideIndex > slides.length) { slideIndex = 1 };
+                     slides[slideIndex - 1].style.display = "block";
+                     setTimeout(SlideShow, 20000);                   
+                     }              
+                     </code>
+                  </div>
+               </div>
             </div>
             <div class="grid_individual">
-                <div class="body_step">
-                    <div class="title_body_step">
-                        <h3>Scroll page Posisiton
-                        </h3>
-                    </div>
-                    <div class="text_body_step">
-                        <p>The icon will appear when the page scrolls in relation to its pixels.</p>
-                        <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode6">code</a>
-                    </div>
-                </div>
-                <div id="modal_6">
-                    <div class="code_text_6">
-                        <span class="close close_6">&times;</span>
-                        <code>window.onscroll = () => {
-                    scrollF();
-                }
-                function scrollF() {
-                    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-                        document.getElementById("arrowHome").style.display = "none";
-                    } else {
-                        document.getElementById("arrowHome").style.display = "none";
-                    }              
-                }             
-            </code>
-                    </div>
-                </div>
+               <div class="body_step">
+                  <div class="title_body_step">
+                     <h3>Scroll page Posisiton
+                     </h3>
+                  </div>
+                  <div class="text_body_step">
+                     <p>The icon will appear when the page scrolls in relation to its pixels.</p>
+                     <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode6">code</a>
+                  </div>
+               </div>
+               <div id="modal_6">
+                  <div class="code_text_6">
+                     <span class="close close_6">&times;</span>
+                     <code>window.onscroll = () => {
+                     scrollF();
+                     }
+                     function scrollF() {
+                     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                     document.getElementById("arrowHome").style.display = "none";
+                     } else {
+                     document.getElementById("arrowHome").style.display = "none";
+                     }              
+                     }             
+                     </code>
+                  </div>
+               </div>
             </div>
             <div class="grid_individual">
-                <div class="body_step">
-                    <div class="title_body_step">
-                        <h3>Video Youtube
-                        </h3>
-                    </div>
-                    <div class="text_body_step">
-                        <p>Get control of youtube with javascript, like autoplay and auto mute.</p>
-                        <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode7">code</a>
-                    </div>
-                </div>
-                <div id="modal_7">
-                    <div class="code_text_7">
-                        <span class="close close_7">&times;</span>
-                        <code>let video = document.getElementById("videoShow");
-                    video.addEventListener("click", () => {
-                        document.getElementById("videoframe").style.display = "block";
-                        document.getElementById("videoYoutube").src += "?autoplay=1&mute=1";
-                    })            
-            </code>
-                    </div>
-                </div>
+               <div class="body_step">
+                  <div class="title_body_step">
+                     <h3>Video Youtube
+                     </h3>
+                  </div>
+                  <div class="text_body_step">
+                     <p>Get control of youtube with javascript, like autoplay and auto mute.</p>
+                     <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode7">code</a>
+                  </div>
+               </div>
+               <div id="modal_7">
+                  <div class="code_text_7">
+                     <span class="close close_7">&times;</span>
+                     <code>let video = document.getElementById("videoShow");
+                     video.addEventListener("click", () => {
+                     document.getElementById("videoframe").style.display = "block";
+                     document.getElementById("videoYoutube").src += "?autoplay=1&mute=1";
+                     })            
+                     </code>
+                  </div>
+               </div>
             </div>
             <div class="grid_individual">
-                <div class="body_step">
-                    <div class="title_body_step">
-                        <h3>Validate form
-                        </h3>
-                    </div>
-                    <div class="text_body_step">
-                        <p>with a simple code to validate the form, it's ease and fast.</p>
-                        <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode8">code</a>
-                    </div>
-                </div>
-                <div id="modal_8">
-                    <div class="code_text_8">
-                        <span class="close close_8">&times;</span>
-                        <code> const user = document.getElementById("user");
-                    const email = document.getElementById("email");
-                    const textArea = document.getElementById("textareaJ");
-                    const form = document.getElementById("form");
-                    const errorElement = document.getElementById('error');
-                   
-                    form.addEventListener('submit', (e) => {
-                      let messages = []
-                      if (user.value === '' || user.value == null) {
-                        messages.push('Name is required!');
-                        errorElement.style.display = "flex";
-                      }
-                    
-                      if (email.value === "") {
-                        messages.push('Please, enter with your email!')
-                        errorElement.style.display = "flex";
-                      }
-                   
-                      if (textArea.value === "") {
-                        messages.push('What is your message?')
-                        errorElement.style.display = "flex";
-                      }
-                   
-                      if (messages.length > 0) {
-                        e.preventDefault()
-                        errorElement.innerText = messages.join(`\n`);
-                      }
-                   
-                    })              
-            </code>
-                    </div>
-                </div>
+               <div class="body_step">
+                  <div class="title_body_step">
+                     <h3>Validate form
+                     </h3>
+                  </div>
+                  <div class="text_body_step">
+                     <p>with a simple code to validate the form, it's ease and fast.</p>
+                     <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode8">code</a>
+                  </div>
+               </div>
+               <div id="modal_8">
+                  <div class="code_text_8">
+                     <span class="close close_8">&times;</span>
+                     <code> const user = document.getElementById("user");
+                     const email = document.getElementById("email");
+                     const textArea = document.getElementById("textareaJ");
+                     const form = document.getElementById("form");
+                     const errorElement = document.getElementById('error');
+                     form.addEventListener('submit', (e) => {
+                     let messages = []
+                     if (user.value === '' || user.value == null) {
+                     messages.push('Name is required!');
+                     errorElement.style.display = "flex";
+                     }
+                     if (email.value === "") {
+                     messages.push('Please, enter with your email!')
+                     errorElement.style.display = "flex";
+                     }
+                     if (textArea.value === "") {
+                     messages.push('What is your message?')
+                     errorElement.style.display = "flex";
+                     }
+                     if (messages.length > 0) {
+                     e.preventDefault()
+                     errorElement.innerText = messages.join(`\n`);
+                     }
+                     })              
+                     </code>
+                  </div>
+               </div>
             </div>
             <div class="grid_individual">
-                <div class="body_step">
-                    <div class="title_body_step">
-                        <h3>Modal Box
-                        </h3>
-                    </div>
-                    <div class="text_body_step">
-                        <p>Like this box that opens when you click to see the code.</p>
-                        <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode9">code</a>
-                    </div>
-                </div>
-                <div id="modal_9">
-                    <div class="code_text_9">
-                        <span class="close close_9">&times;</span>
-                        <code>let video = document.getElementById("videoShow");
-                    video.addEventListener("click", () => {
-                        document.getElementById("videoframe").style.display = "block";
-                        document.getElementById("videoYoutube").src += "?autoplay=1&mute=1";
-                    })            
-            </code>
-                    </div>
-                </div>
+               <div class="body_step">
+                  <div class="title_body_step">
+                     <h3>Modal Box
+                     </h3>
+                  </div>
+                  <div class="text_body_step">
+                     <p>Like this box that opens when you click to see the code.</p>
+                     <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode9">code</a>
+                  </div>
+               </div>
+               <div id="modal_9">
+                  <div class="code_text_9">
+                     <span class="close close_9">&times;</span>
+                     <code>let video = document.getElementById("videoShow");
+                     video.addEventListener("click", () => {
+                     document.getElementById("videoframe").style.display = "block";
+                     document.getElementById("videoYoutube").src += "?autoplay=1&mute=1";
+                     })            
+                     </code>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-    <!--Contact-->
-    <section class="contact">
-        <div class="title_pojects">
+            <div class="grid_individual">
+               <div class="body_step">
+                  <div class="title_body_step">
+                     <h3>Smooth Scroll
+                     </h3>
+                  </div>
+                  <div class="text_body_step">
+                     <p>in this case, use jQuery to make it easier and faster.</p>
+                     <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode10">code</a>
+                  </div>
+               </div>
+               <div id="modal_10">
+                  <div class="code_text_10">
+                     <span class="close close_10">&times;</span>
+                     <code>$(document).ready(function(){
+                     $("a").on('click', function(event) {
+                     if (this.hash !== "") {
+                     event.preventDefault();
+                     var hash = this.hash;
+                     $('html, body').animate({
+                     scrollTop: $(hash).offset().top
+                     }, 800, function(){
+                     window.location.hash = hash;
+                     });
+                     } 
+                     });
+                     });            
+                     </code>
+                  </div>
+               </div>
+            </div>
+            <div class="grid_individual">
+               <div class="body_step">
+                  <div class="title_body_step">
+                     <h3>Date
+                     </h3>
+                  </div>
+                  <div class="text_body_step">
+                     <p>To take the current year without having to change it constantly.</p>
+                     <a href="javascript:void(0)" class="btnExplorer btnContinue btnStep" id="btnModalCode11">code</a>
+                  </div>
+               </div>
+               <div id="modal_11">
+                  <div class="code_text_11">
+                     <span class="close close_11">&times;</span>
+                     <code>let date = new Date();
+                     let year = date.getFullYear();
+                     document.getElementById("date").innerHTML = year;          
+                     </code>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--Contact-->
+      <section class="contact" id="contact">
+         <div class="title_pojects">
             <h2>Recent
-                <br>
-                <span class="projectsBlue">Projects</span>
+               <br>
+               <span class="projectsBlue">Projects</span>
             </h2>
             <p>Praesent pellentesque efficitur magna, <br>
-                sed pellentesque neque malesuada vitae.</p>
-        </div>
-
-        <div class="form">
+               sed pellentesque neque malesuada vitae.
+            </p>
+         </div>
+         <div class="form">
             <form action="#" id="form" name="myForm" method="POST">
-                <div class="inputs">
-                    <input type="text" id="user" placeholder="Your name...">
-                    <input type="text" id="email" name="emailInput" placeholder="Your email...">
-                    <input type="text" placeholder="Subject...">
-                </div>
-                <div class="textarea">
-                    <textarea id="textareaJ" name="textA" cols="30" rows="12"></textarea>
-                </div>
-                <button class="btnForm" type="submit">Send message now!</button>
-                <div id="error"></div>
+               <div class="inputs">
+                  <input type="text" id="user" placeholder="Your name...">
+                  <input type="text" id="email" name="emailInput" placeholder="Your email...">
+                  <input type="text" placeholder="Subject...">
+               </div>
+               <div class="textarea">
+                  <textarea id="textareaJ" name="textA" cols="30" rows="12"></textarea>
+               </div>
+               <button class="btnForm" type="submit">Send message now!</button>
+               <div id="error"></div>
+               <div id="success"></div>
             </form>
-        </div>
-    </section>
-
-    <script src="script.js"></script>
-
-</body>
+         </div>
+      </section>
+      <div class="date">
+         <p>Template recreated by Eduardo S. Lima <span id="date"></span>.</p>
+      </div>
+      <script src="script.js"></script>
+   </body>
 </html>

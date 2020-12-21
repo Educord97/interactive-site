@@ -1,7 +1,22 @@
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+  
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+     
+          window.location.hash = hash;
+        });
+      } 
+    });
+  });
+
 //Carousel
 var slideIndex = 0;
 SlideShow();
-
 function SlideShow() {
     var i = 0;
     var slides = document.getElementsByClassName("slide");
@@ -15,8 +30,7 @@ function SlideShow() {
 
     slides[slideIndex - 1].style.display = "block";
 
-    setTimeout(SlideShow, 20000);
-
+    setTimeout(SlideShow, 15000);
 }
 
 //Change word function
@@ -25,14 +39,11 @@ let wordsIndividual = 0;
 setInterval(() => {
     document.getElementById("letter").innerHTML = words[wordsIndividual++]
     if (wordsIndividual === words.length) wordsIndividual = 0;
-
-}, 20000);
-
+}, 15000);
 
 //TypeWritter
 let i = 0;
 let txt = "The evolution of a simple developer is given by the insistence";
-
 function typeWriter() {
     if (i < txt.length) {
         document.getElementById("outputWritter").innerHTML += txt.charAt(i);
@@ -42,31 +53,24 @@ function typeWriter() {
 }
 window.onload = typeWriter;
 
-
 //Page position
 window.onscroll = () => {
-    scrollF();
+    scrollLinks();
 }
-function scrollF() {
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        document.getElementById("arrowHome").style.display = "none";
-    } else {
-        document.getElementById("arrowHome").style.display = "none";
-    }
-
+function scrollLinks(){
+    if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      document.getElementById("side").style.display = "none";
+    }   
 }
-
 
 //Responsive
 function responsiveBtn() {
     let menu = document.getElementById("nav_responsive");
     if (menu.style.visibility === "visible") {
         menu.style.visibility = "hidden"
-
     } else {
         menu.style.visibility = "visible";
     }
-
 }
 
 //Hide nav_responsive when sroll to down
@@ -97,9 +101,9 @@ video.addEventListener("click", () => {
 })
 
 //Modals box code
-const modals = [`modal1, modal2, modal3, modal4, modal5, modal6`];
-const btns = [`btn1, btn2, btn3, btn4, btn5, btn6`]
-const closes = [`close1, close2, close3, close4, close5`]
+const modals = [];
+const btns = [];
+const closes = [];
 
 closes[0] = document.getElementsByClassName("close")[0];
 modals[0] = document.getElementById("modal_1");
@@ -136,6 +140,14 @@ btns[7] = document.getElementById("btnModalCode8");
 closes[8] = document.getElementsByClassName("close_9")[0];
 modals[8] = document.getElementById("modal_9");
 btns[8] = document.getElementById("btnModalCode9");
+
+closes[9] = document.getElementsByClassName("close_10")[0];
+modals[9] = document.getElementById("modal_10");
+btns[9] = document.getElementById("btnModalCode10");
+
+closes[10] = document.getElementsByClassName("close_11")[0];
+modals[10] = document.getElementById("modal_11");
+btns[10] = document.getElementById("btnModalCode11");
 
 
 btns[0].onclick = () => {
@@ -201,11 +213,26 @@ closes[8].onclick = () => {
     modals[8].style.display = "none";
 }
 
+btns[9].onclick = () => {
+    modals[9].style.display = "flex";
+}
+closes[9].onclick = () => {
+    modals[9].style.display = "none";
+}
+
+btns[10].onclick = () => {
+    modals[10].style.display = "flex";
+}
+closes[10].onclick = () => {
+    modals[10].style.display = "none";
+}
+
 //Click outside of box modal too close the modal
 window.onclick = function (event) {
     if (event.target == modals[0] || event.target == modals[1] || event.target == modals[2]
         || event.target == modals[3] || event.target == modals[4] || event.target == modals[5]
-        || event.target == modals[6] || event.target == modals[7] || event.target == modals[8]) {
+        || event.target == modals[6] || event.target == modals[7] || event.target == modals[8]
+        || event.target == modals[9] || event.target == modals[10]) {
         modals[0].style.display = "none";
         modals[1].style.display = "none";
         modals[2].style.display = "none";
@@ -215,10 +242,11 @@ window.onclick = function (event) {
         modals[6].style.display = "none";
         modals[7].style.display = "none";
         modals[8].style.display = "none";
+        modals[9].style.display = "none";
+        modals[10].style.display = "none";
 
     }
 }
-
 
 //Contact
 const user = document.getElementById("user");
@@ -226,6 +254,7 @@ const email = document.getElementById("email");
 const textArea = document.getElementById("textareaJ");
 const form = document.getElementById("form");
 const errorElement = document.getElementById('error');
+const success = document.getElementById('success');
 
 form.addEventListener('submit', (e) => {
     let messages = []
@@ -241,7 +270,7 @@ form.addEventListener('submit', (e) => {
 
     if (textArea.value === "") {
         messages.push('What is your message?')
-        errorElement.style.display = "flex";
+        errorElement.style.visibility = "visible";
     }
 
     if (messages.length > 0) {
@@ -249,4 +278,13 @@ form.addEventListener('submit', (e) => {
         errorElement.innerText = messages.join(`\n`);
     }
 
+    if (user.value !== "" && email.value !== ""  && textArea.value !== "") {
+        messages.push('Thasnks bro :)')
+        success.style.display = "none";
+    }
 })
+
+//Date
+let date = new Date();
+let year = date.getFullYear();
+document.getElementById("date").innerHTML = year;
