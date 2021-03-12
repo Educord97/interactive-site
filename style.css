@@ -157,6 +157,9 @@ body {
     font-size: 18px;
     }
     }
+    .fa-circle{
+        font-size: 7px;
+    }
     #iconHome {
     display: inline;
     margin-right: 5px;
